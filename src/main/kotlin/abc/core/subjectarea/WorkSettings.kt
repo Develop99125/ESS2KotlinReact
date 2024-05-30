@@ -1,0 +1,61 @@
+package abc.core.subjectarea
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.json.Json
+import abc.core.subjectarea.Artifact
+import abc.core.subjectarea.EntityLink
+
+@Serializable
+class WorkSettings{
+    var oid:Long=0
+    var valid:Boolean=false
+    var archiveDepthInDay:Int=0
+    var archiveLastDay:Int=0
+    var streamDataPeriod:Int=0
+    var streamDataLongPeriod:Int=0
+    var failureTestPeriod:Int=0
+    var GUIrefreshPeriod:Int=0
+    var eventTestPeriod:Int=0
+    var snapShotPeriod:Int=0
+    var maxRegisterAge:Int=0
+    var mainServerIP:String=""
+    var mainServerPort:Int=0
+    var mainServerMode:Boolean=false
+    var fileScanPeriod:Int=0
+    var mainServerConnectPeriod:Int=0
+    var plmConnected:Boolean=false
+    var metaSystemId:Long=0
+    var waitForMainServer:Boolean=false
+    var compressMode:Int=0
+    var userSilenceTime:Int=0
+    var mainServerPeriod:Int=0
+    var iec61850Port:Int=0
+    var iec60870Port:Int=0
+    var iec60870ASDUAddress:Int=0
+    var priorityDispatcher:Boolean=false
+    var clockAcrossAPI:Boolean=false
+    var profilerOn:Boolean=false
+    var profilerTrace:Boolean=false
+    var profilerBundle:Boolean=false
+    var profilerPort:Int=0
+    var profilerScale:Int=0
+    var profilerPath:String=""
+    var interruptRegisterOn:Boolean=false
+    var eventsQueuePeriod:Int=0
+    var modellingSpeed:Int=0
+    var streamFileSets:Int=0
+    var MKVersion:String=""
+    var dataServerFileDir:String=""
+    var dataServerFileDirDefault:Boolean=false
+    var convertAtrifact:Boolean=false
+    var mailHost:String=""
+    var mailBox:String=""
+    var mailPass:String=""
+    var mailSecur:String=""
+    var mailPort:Int=0
+    var mailToSend:String=""
+    var mailNotifycation:Boolean=false
+    var nodeName:String=""
+    var traceLevel:Int=0
+    constructor() {}
+}
